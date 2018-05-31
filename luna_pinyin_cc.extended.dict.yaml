@@ -1,0 +1,46 @@
+# Rime dictionary
+# encoding: utf-8
+#
+#  BetterRime词库增强包－实用版の准正式版 by @imy0823
+#
+#
+# 部署位置：
+# ~/.config/ibus/rime  (Linux)
+# ~/Library/Rime  (Mac OS)
+# %APPDATA%\Rime  (Windows)
+#
+# 於重新部署後生效
+#
+
+---
+name: luna_pinyin_cc.extended
+version: "2014.09.07"
+sort: by_weight
+use_preset_vocabulary: true
+#下面的是本词库包含的所有词库，请根据需要开启/禁用，词条前添删#号即可开启/关闭词库。
+#雙拼不支持 luna_pinyin.cn_en 詞庫，請用戶手動禁用。
+import_tables:
+  - luna_pinyin
+  - dict/luna_pinyin.extra_hanzi
+  - dict/luna_pinyin.sgmain
+  - dict/luna_pinyin.sgplus
+  - dict/luna_pinyin.sgplus2
+  - dict/luna_pinyin.chat
+  - dict/luna_pinyin.net
+  - dict/luna_pinyin.user
+  - dict/luna_pinyin.cn_en
+  #- dict/luna_pinyin.english
+  - dict/luna_pinyin.biaoqing
+  - dict/luna_pinyin.website
+  - dict/luna_pinyin.game
+  - dict/luna_pinyin.anime
+  #- dict/luna_pinyin.moba
+  #- dict/luna_pinyin.place
+  #- dict/luna_pinyin.poetry
+  #- dict/luna_pinyin.movie
+  #- dict/luna_pinyin.music
+  #- dict/luna_pinyin.computer
+  #- dict/luna_pinyin.history
+  #- dict/luna_pinyin.name
+  #- dict/luna_pinyin.shopping
+...

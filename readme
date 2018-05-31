@@ -1,0 +1,29 @@
+2018-06-01 00:14:19 Fri CST
+注意在rime更新之后,会删除default文件,要修改其中的版本号之后,才能避免其删除
+
+每次build会需要一些时间
+
+通过这个文件管理需要导入哪些字典
+luna_pinyin_cc.extended.dict.yaml
+
+字典文件不小,所以需要一个独立的repo,放在改动频繁的home中会有太多历史积累
+
+放置的目录是
+~/.config/fcitx/rime/
+
+backup目录中放一些现在用不到的
+
+emoji输入要前置`
+
+目录结构:
+backup 配置文件备份
+dict 字典文件
+default.yaml 配置入口，设定启用那些schema，升级rime之后会需要修改这里的config version
+easy_en 字典和schema
+emoji.schema.yaml
+luna_pinyin_cc.extended.dict.yaml 管理加载哪些字典
+luna_pinyin_simp.custom.yaml 在default.yaml加载luna_pinyin_simp后，对其修改，加入easy_en和emoji
+
+
+
+
