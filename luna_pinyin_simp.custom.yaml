@@ -38,7 +38,7 @@ patch:
   #    - reverse_lookup
   reverse_lookup:
       dictionary: emoji
-      enable_completion: false
+      enable_completion: true
       prefix: "`"
       tips: 〔表情〕
 
