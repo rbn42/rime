@@ -19,7 +19,7 @@ emoji输入要前置`
     - 关闭了luna_pinyin_simp以外的schema 
     - 删除了rime中定义的包括中英文切换在内的快捷键,因为fcitx已经有这功能了
     - 关闭了全角输入,因为在vim中f键查找半角更方便.
-      - 顺便推荐下用fcitx.vim自动切换中英文.fcitx.vim默认有延迟,需要设置在vimrc中设置set ttimeoutlen=100
+      - 顺便推荐下用fcitx.vim自动切换中英文.fcitx.vim默认有延迟,需要在vimrc中设置set ttimeoutlen=100
   - easy_en 字典和schema
   - emoji.schema.yaml
   - luna_pinyin_cc.extended.dict.yaml 管理加载哪些字典
