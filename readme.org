@@ -18,7 +18,7 @@ emoji输入要前置`
   - default.custom.yaml 配置入口 
     - 关闭了luna_pinyin_simp以外的schema 
     - 删除了rime中定义的包括中英文切换在内的快捷键,因为fcitx已经有这功能了
-    - 关闭了全角输入
+    - 关闭了全角输入,因为在vim中f键查找半角更方便
   - easy_en 字典和schema
   - emoji.schema.yaml
   - luna_pinyin_cc.extended.dict.yaml 管理加载哪些字典
