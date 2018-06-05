@@ -1,0 +1,26 @@
+配置文件来自于贴吧的Rime增强计划 http://tieba.baidu.com/p/4125987751
+* 说明
+每次build会需要一些时间
+
+放置的目录是 ~/.config/fcitx/rime/
+
+emoji输入要前置`
+
+如果要使用全角输入,删除default.custom.yaml中的punctunator项后重新build
+
+如果要恢复各种快捷键,删除default.custom.yaml中的key_binder项后重新build
+
+如果要使用luna_pinyin_simp以外的schema,修改default.custom.yaml中的schema_list项后重新build
+
+* 目录结构
+  - backup 配置文件备份
+  - dict 字典文件
+  - default.custom.yaml 配置入口,关闭了luna_pinyin_simp以外的schema,删除了包括中英文切换在内的快捷键,关闭了全角
+  - easy_en 字典和schema
+  - emoji.schema.yaml
+  - luna_pinyin_cc.extended.dict.yaml 管理加载哪些字典
+  - luna_pinyin_simp.custom.yaml 在default.yaml加载luna_pinyin_simp后，对其修改，加入easy_en和emoji
+
+
+
+
