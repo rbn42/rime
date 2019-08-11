@@ -31,10 +31,10 @@ patch:
       - punct_translator
       - r10n_translator
       - reverse_lookup_translator
-  engine/filters:
-    - simplifier
-    - uniquifier
-    - charset_filter@gbk                                # GBK过滤
+        #engine/filters:
+        #  - simplifier
+        #  - uniquifier
+        #  - charset_filter@gbk                                # GBK过滤  #no use
   recognizer/patterns/reverse_lookup: "`[a-z]*$"   #请删除$后的空格！不加一个空格貌似总是解析错误，不知道MarkDown我还有多少不知道的地方:(
   schema/dependencies:
       - emoji
