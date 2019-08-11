@@ -31,6 +31,10 @@ patch:
       - punct_translator
       - r10n_translator
       - reverse_lookup_translator
+  engine/filters:
+    - simplifier
+    - uniquifier
+    - charset_filter@gbk                                # GBK过滤
   recognizer/patterns/reverse_lookup: "`[a-z]*$"   #请删除$后的空格！不加一个空格貌似总是解析错误，不知道MarkDown我还有多少不知道的地方:(
   schema/dependencies:
       - emoji
@@ -150,3 +154,4 @@ patch:
   # 分尖團後 v => ü 的改寫條件也要相應地擴充：
   #'translator/preedit_format':
   #  - "xform/([nljqxyzcs])v/$1ü/"
+  #
